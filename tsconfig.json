@@ -1,16 +1,17 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "isolatedModules": true,
-    "noEmit": true,
-  },
-  "include": [
-    "src/**/*"
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.vitest.json"
+    }
   ],
-  "exclude": [
-    "**/*.spec.ts"
-  ]
+  "compilerOptions": {
+    "module": "NodeNext"
+  }
 }
