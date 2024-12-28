@@ -5,18 +5,21 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest",
     "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
-    "build-only": "vite build",
+    "build-only": "run-p type-check \"build-only {@}\" --",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "cross-fetch": "^4.1.0",
     "pinia": "^2.3.0",
+    "unplugin-vue-markdown": "^0.28.0",
+    "vike": "^0.4.211",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
