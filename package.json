@@ -13,8 +13,7 @@
     "build-only": "run-p type-check \"build-only {@}\" --",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
-    "format": "prettier --write src/",
-    "deploy": "gh-pages -d dist"
+    "format": "prettier --write src/"
   },
   "dependencies": {
     "cross-fetch": "^4.1.0",
