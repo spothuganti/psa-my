@@ -9,7 +9,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 export default defineConfig({
   base: '/psa-my/',
   plugins: [
-    ssr({ trailingSlash: true }),
+    ssr({ prerender: true, trailingSlash: true }),
     vue({
       include: [/\.vue$/, /\.md$/],
     }),
