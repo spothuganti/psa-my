@@ -1,1 +1,0 @@
-import{d as e,r,o as s,c as a,t as c,u as o}from"./chunk-7ada7f48.js";const m=e({setup(u){const t=r({count:0});return(p,n)=>(s(),a("button",{onClick:n[0]||(n[0]=i=>o(t).count++)},"Counter "+c(o(t).count),1))}});export{m as _};
