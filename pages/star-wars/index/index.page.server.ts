@@ -14,8 +14,6 @@ async function onBeforeRender() {
         // the client; we want to minimize what is sent over the network.
         movies: filterMoviesData(movies),
       },
-      // The page's <title>
-      documentProps: { title: getTitle(movies) },
     },
   };
 }

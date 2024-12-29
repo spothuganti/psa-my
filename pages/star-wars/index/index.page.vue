@@ -16,3 +16,7 @@
 <script lang="ts" setup>
 defineProps(["movies"]);
 </script>
+
+<script lang="ts">
+export const title = "Star Wars";
+</script>

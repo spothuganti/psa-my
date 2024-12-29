@@ -8,8 +8,9 @@
 </template>
 
 <script lang="ts" setup>
-defineProps(["movie"]);
+const props = defineProps(["movie"]);
 </script>
 <script lang="ts">
 export { onBeforeRender } from "./onBeforeRender";
+export const title = 'SW Movie';
 </script>
