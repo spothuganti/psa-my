@@ -1,7 +1,5 @@
-import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
-import ssr from 'vike/plugin'
+import ssr from 'vite-plugin-ssr/plugin'
 import md from 'unplugin-vue-markdown/vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -9,7 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/psa-my/',
+  base: '/psa-my',
   plugins: [
     ssr({ prerender: true }),
     vue({
@@ -19,9 +17,4 @@ export default defineConfig({
     vueDevTools(),
     md({}),
   ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    },
-  },
 })

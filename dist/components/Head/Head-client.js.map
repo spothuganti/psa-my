@@ -1,1 +1,0 @@
-{"version":3,"file":"Head-client.js","sources":["../../../src/utils/noop.ts"],"sourcesContent":["export function noop() {}\r\n"],"names":[],"mappings":"AAAO,SAAS,OAAO;AAAC;"}
