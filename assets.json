@@ -1,40 +1,5 @@
 {
-  "_chunk-B6Aj7L_O.js": {
-    "file": "assets/chunks/chunk-B6Aj7L_O.js",
-    "name": "Counter.vue_vue_type_script_setup_true_lang",
-    "imports": [
-      "_chunk-BHVpcwqr.js"
-    ]
-  },
-  "_chunk-BHVpcwqr.js": {
-    "file": "assets/chunks/chunk-BHVpcwqr.js",
-    "name": "runtime-core.esm-bundler"
-  },
-  "_chunk-CYmGo9Tv.js": {
-    "file": "assets/chunks/chunk-CYmGo9Tv.js",
-    "name": "executeOnRenderClientHook"
-  },
-  "_chunk-DCUaQNGz.js": {
-    "file": "assets/chunks/chunk-DCUaQNGz.js",
-    "name": "prefetch",
-    "imports": [
-      "_chunk-CYmGo9Tv.js"
-    ]
-  },
-  "_chunk-KYcoIRiU.js": {
-    "file": "assets/chunks/chunk-KYcoIRiU.js",
-    "name": "preload-helper"
-  },
-  "node_modules/vite-plugin-ssr/dist/esm/client/client-routing-runtime/entry.js": {
-    "file": "assets/entries/entry-client-routing.hmzEkT2J.js",
-    "name": "entries/entry-client-routing",
-    "src": "node_modules/vite-plugin-ssr/dist/esm/client/client-routing-runtime/entry.js",
-    "isEntry": true,
-    "imports": [
-      "_chunk-CYmGo9Tv.js",
-      "_chunk-KYcoIRiU.js",
-      "_chunk-DCUaQNGz.js"
-    ],
+  "../../vite-plugin-ssr/dist/esm/client/client-routing-runtime/entry.js": {
     "dynamicImports": [
       "pages/hello/index.page.vue",
       "pages/index.page.vue",
@@ -46,17 +11,17 @@
       "pages/hello/index.page.server.ts?extractAssets&lang.ts",
       "pages/star-wars/index/index.page.server.ts?extractAssets&lang.ts",
       "renderer/_default.page.server.ts?extractAssets&lang.ts"
-    ]
-  },
-  "node_modules/vite-plugin-ssr/dist/esm/client/server-routing-runtime/entry.js": {
-    "file": "assets/entries/entry-server-routing.C6EAzwl6.js",
-    "name": "entries/entry-server-routing",
-    "src": "node_modules/vite-plugin-ssr/dist/esm/client/server-routing-runtime/entry.js",
-    "isEntry": true,
-    "imports": [
-      "_chunk-CYmGo9Tv.js",
-      "_chunk-KYcoIRiU.js"
     ],
+    "file": "assets/entries/entry-client-routing.7ad3020c.js",
+    "imports": [
+      "_chunk-4ba8c9f0.js",
+      "_chunk-101896b7.js",
+      "_chunk-1d9f9fa1.js"
+    ],
+    "isEntry": true,
+    "src": "../../vite-plugin-ssr/dist/esm/client/client-routing-runtime/entry.js"
+  },
+  "../../vite-plugin-ssr/dist/esm/client/server-routing-runtime/entry.js": {
     "dynamicImports": [
       "pages/hello/index.page.vue",
       "pages/index.page.vue",
@@ -68,111 +33,136 @@
       "pages/hello/index.page.server.ts?extractAssets&lang.ts",
       "pages/star-wars/index/index.page.server.ts?extractAssets&lang.ts",
       "renderer/_default.page.server.ts?extractAssets&lang.ts"
+    ],
+    "file": "assets/entries/entry-server-routing.c28d0a6a.js",
+    "imports": [
+      "_chunk-4ba8c9f0.js",
+      "_chunk-101896b7.js"
+    ],
+    "isEntry": true,
+    "src": "../../vite-plugin-ssr/dist/esm/client/server-routing-runtime/entry.js"
+  },
+  "PageShell.css": {
+    "file": "assets/static/PageShell.46edfb3d.css",
+    "src": "PageShell.css"
+  },
+  "_chunk-101896b7.js": {
+    "file": "assets/chunks/chunk-101896b7.js"
+  },
+  "_chunk-1d9f9fa1.js": {
+    "file": "assets/chunks/chunk-1d9f9fa1.js",
+    "imports": [
+      "_chunk-4ba8c9f0.js"
+    ]
+  },
+  "_chunk-4ba8c9f0.js": {
+    "file": "assets/chunks/chunk-4ba8c9f0.js"
+  },
+  "_chunk-7ada7f48.js": {
+    "file": "assets/chunks/chunk-7ada7f48.js"
+  },
+  "_chunk-e09522f2.js": {
+    "file": "assets/chunks/chunk-e09522f2.js",
+    "imports": [
+      "_chunk-7ada7f48.js"
     ]
   },
   "pages/hello/index.page.server.ts?extractAssets&lang.ts": {
-    "file": "assets/entries/pages_hello_index.page.server.extractAssets.DFdCMCwK.js",
-    "name": "entries/pages/hello/index.page.server.ts_extractAssets_lang",
-    "src": "pages/hello/index.page.server.ts?extractAssets&lang.ts",
+    "file": "assets/entries/pages_hello_index.page.server.extractAssets.4ed993c7.js",
+    "isDynamicEntry": true,
     "isEntry": true,
-    "isDynamicEntry": true
+    "src": "pages/hello/index.page.server.ts?extractAssets&lang.ts"
   },
   "pages/hello/index.page.vue": {
-    "file": "assets/entries/pages_hello_index.page.hPmaUrrU.js",
-    "name": "entries/pages/hello/index.page",
-    "src": "pages/hello/index.page.vue",
-    "isEntry": true,
-    "isDynamicEntry": true,
+    "file": "assets/entries/pages_hello_index.page.a89cb1f1.js",
     "imports": [
-      "_chunk-BHVpcwqr.js"
-    ]
+      "_chunk-7ada7f48.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/hello/index.page.vue"
   },
   "pages/index.page.vue": {
-    "file": "assets/entries/pages_index.page.3YWvJvxv.js",
-    "name": "entries/pages/index.page",
-    "src": "pages/index.page.vue",
-    "isEntry": true,
-    "isDynamicEntry": true,
+    "file": "assets/entries/pages_index.page.b97bad14.js",
     "imports": [
-      "_chunk-B6Aj7L_O.js",
-      "_chunk-DCUaQNGz.js",
-      "_chunk-BHVpcwqr.js",
-      "_chunk-CYmGo9Tv.js"
-    ]
+      "_chunk-e09522f2.js",
+      "_chunk-1d9f9fa1.js",
+      "_chunk-7ada7f48.js",
+      "_chunk-4ba8c9f0.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/index.page.vue"
   },
   "pages/markdown.page.md": {
-    "file": "assets/entries/pages_markdown.page.1XvicWtm.js",
-    "name": "entries/pages/markdown.page",
-    "src": "pages/markdown.page.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
+    "file": "assets/entries/pages_markdown.page.eff232fa.js",
     "imports": [
-      "_chunk-B6Aj7L_O.js",
-      "_chunk-BHVpcwqr.js"
-    ]
+      "_chunk-e09522f2.js",
+      "_chunk-7ada7f48.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/markdown.page.md"
   },
   "pages/star-wars/index/index.page.server.ts?extractAssets&lang.ts": {
-    "file": "assets/entries/pages_star-wars_index_index.page.server.extractAssets.l0sNRNKZ.js",
-    "name": "entries/pages/star-wars/index/index.page.server.ts_extractAssets_lang",
-    "src": "pages/star-wars/index/index.page.server.ts?extractAssets&lang.ts",
-    "isEntry": true
+    "file": "assets/entries/pages_star-wars_index_index.page.server.extractAssets.4ed993c7.js",
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/star-wars/index/index.page.server.ts?extractAssets&lang.ts"
   },
   "pages/star-wars/index/index.page.vue": {
-    "file": "assets/entries/pages_star-wars_index_index.page.PNX8FyRV.js",
-    "name": "entries/pages/star-wars/index/index.page",
-    "src": "pages/star-wars/index/index.page.vue",
-    "isEntry": true,
-    "isDynamicEntry": true,
+    "file": "assets/entries/pages_star-wars_index_index.page.483154f9.js",
     "imports": [
-      "_chunk-BHVpcwqr.js"
-    ]
+      "_chunk-7ada7f48.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/star-wars/index/index.page.vue"
   },
   "pages/star-wars/movie/index.page.vue": {
-    "file": "assets/entries/pages_star-wars_movie_index.page.BY7WBs4_.js",
-    "name": "entries/pages/star-wars/movie/index.page",
-    "src": "pages/star-wars/movie/index.page.vue",
-    "isEntry": true,
-    "isDynamicEntry": true,
+    "file": "assets/entries/pages_star-wars_movie_index.page.9a013b6f.js",
     "imports": [
-      "_chunk-BHVpcwqr.js"
-    ]
+      "_chunk-7ada7f48.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/star-wars/movie/index.page.vue"
   },
   "renderer/_default.page.client.ts": {
-    "file": "assets/entries/renderer_default.page.client.DChp6dS4.js",
-    "name": "entries/renderer/_default.page.client",
-    "src": "renderer/_default.page.client.ts",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_chunk-BHVpcwqr.js",
-      "renderer/_default.page.server.ts?extractAssets&lang.ts"
-    ],
     "assets": [
-      "assets/static/logo.DGgXBuN3.svg"
-    ]
+      "assets/static/logo.0ab59a12.svg"
+    ],
+    "css": [
+      "assets/static/PageShell.46edfb3d.css"
+    ],
+    "file": "assets/entries/renderer_default.page.client.6b5b8b68.js",
+    "imports": [
+      "_chunk-7ada7f48.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_default.page.client.ts"
   },
   "renderer/_default.page.server.ts?extractAssets&lang.ts": {
-    "file": "assets/entries/renderer_default.page.server.extractAssets.CXtXaI5P.js",
-    "name": "entries/renderer/_default.page.server.ts_extractAssets_lang",
-    "src": "renderer/_default.page.server.ts?extractAssets&lang.ts",
-    "isEntry": true,
-    "isDynamicEntry": true,
     "css": [
-      "assets/static/default.page.server.DYDzfX7l.css"
-    ]
+      "assets/static/PageShell.46edfb3d.css"
+    ],
+    "file": "assets/entries/renderer_default.page.server.extractAssets.8b0abebb.js",
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_default.page.server.ts?extractAssets&lang.ts"
   },
   "renderer/_error.page.vue": {
-    "file": "assets/entries/renderer_error.page.Clhv8_Lv.js",
-    "name": "entries/renderer/_error.page",
-    "src": "renderer/_error.page.vue",
-    "isEntry": true,
-    "isDynamicEntry": true,
+    "file": "assets/entries/renderer_error.page.3707228f.js",
     "imports": [
-      "_chunk-BHVpcwqr.js"
-    ]
+      "_chunk-7ada7f48.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_error.page.vue"
   },
   "renderer/logo.svg": {
-    "file": "assets/static/logo.DGgXBuN3.svg",
+    "file": "assets/static/logo.0ab59a12.svg",
     "src": "renderer/logo.svg"
   }
 }

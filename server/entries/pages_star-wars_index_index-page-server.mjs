@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-import { f as filterMovieData } from "../chunks/chunk-BChgxANp.js";
+import { f as filterMovieData } from "../chunks/chunk-337a7715.js";
 async function onBeforeRender() {
   const movies = await fetchStarWarsMovies();
   return {

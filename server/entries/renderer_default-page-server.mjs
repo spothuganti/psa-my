@@ -1,8 +1,8 @@
 import { renderToNodeStream } from "@vue/server-renderer";
 import { escapeInject } from "vite-plugin-ssr/server";
-import { inject, defineComponent, useAttrs, computed, mergeProps, useSSRContext, withCtx, createTextVNode, markRaw, h, createSSRApp, reactive } from "vue";
+import { inject, defineComponent, useAttrs, computed, mergeProps, unref, useSSRContext, withCtx, createTextVNode, markRaw, h, createSSRApp, reactive } from "vue";
 import { ssrRenderAttrs, ssrRenderSlot, ssrRenderAttr, ssrRenderComponent } from "vue/server-renderer";
-const _imports_0 = "/psa-my/assets/static/logo.DGgXBuN3.svg";
+const _imports_0 = "/assets/static/logo.0ab59a12.svg";
 const key = Symbol();
 function usePageContext() {
   const pageContext = inject(key);
@@ -12,7 +12,6 @@ function setPageContext(app, pageContext) {
   app.provide(key, pageContext);
 }
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
-  __name: "Link",
   __ssrInlineRender: true,
   setup(__props) {
     const pageContext = usePageContext();
@@ -23,13 +22,14 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<a${ssrRenderAttrs(mergeProps({
-        class: { active: isActive.value }
+        class: { active: unref(isActive) }
       }, _attrs))} data-v-7d8c9f1f>`);
       ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
       _push(`</a>`);
     };
   }
 });
+const Link_vue_vue_type_style_index_0_scoped_7d8c9f1f_lang = "";
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key2, val] of props) {
@@ -45,12 +45,11 @@ _sfc_main$1.setup = (props, ctx) => {
 };
 const Link = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-7d8c9f1f"]]);
 const _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "PageShell",
   __ssrInlineRender: true,
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "layout" }, _attrs))} data-v-0299ac95><div class="navigation" data-v-0299ac95><a href="/psa-my/" class="logo" data-v-0299ac95><img${ssrRenderAttr("src", _imports_0)} height="64" width="64" data-v-0299ac95></a>`);
-      _push(ssrRenderComponent(Link, { href: "/psa-my/" }, {
+      _push(`<div${ssrRenderAttrs(mergeProps({ class: "layout" }, _attrs))} data-v-55cdfa74><div class="navigation" data-v-55cdfa74><a href="/" class="logo" data-v-55cdfa74><img${ssrRenderAttr("src", _imports_0)} height="64" width="64" data-v-55cdfa74></a>`);
+      _push(ssrRenderComponent(Link, { href: "/" }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`Welcome`);
@@ -62,7 +61,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         }),
         _: 1
       }, _parent));
-      _push(ssrRenderComponent(Link, { href: "/psa-my/markdown" }, {
+      _push(ssrRenderComponent(Link, { href: "/markdown" }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`Markdown`);
@@ -74,7 +73,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         }),
         _: 1
       }, _parent));
-      _push(ssrRenderComponent(Link, { href: "/psa-my/star-wars" }, {
+      _push(ssrRenderComponent(Link, { href: "/star-wars" }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`Data Fetching`);
@@ -86,7 +85,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         }),
         _: 1
       }, _parent));
-      _push(ssrRenderComponent(Link, { href: "/psa-my/hello" }, {
+      _push(ssrRenderComponent(Link, { href: "/hello" }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`Routing`);
@@ -98,19 +97,21 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         }),
         _: 1
       }, _parent));
-      _push(`</div><div class="content" data-v-0299ac95>`);
+      _push(`</div><div class="content" data-v-55cdfa74>`);
       ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
       _push(`</div></div>`);
     };
   }
 });
+const PageShell_vue_vue_type_style_index_0_lang = "";
+const PageShell_vue_vue_type_style_index_1_scoped_55cdfa74_lang = "";
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("renderer/PageShell.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const PageShell = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-0299ac95"]]);
+const PageShell = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-55cdfa74"]]);
 function createApp(pageContext) {
   const { Page } = pageContext;
   let rootComponent;
@@ -159,7 +160,6 @@ function getPageTitle(pageContext) {
 }
 const passToClient = ["pageProps", "documentProps"];
 async function render(pageContext) {
-  console.log("psa inside ssr render");
   const app = createApp(pageContext);
   const stream = renderToNodeStream(app);
   const title = getPageTitle(pageContext);

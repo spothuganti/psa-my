@@ -1,7 +1,6 @@
 import { defineComponent, useSSRContext } from "vue";
 import { ssrRenderAttrs, ssrInterpolate } from "vue/server-renderer";
 const _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "_error.page",
   __ssrInlineRender: true,
   props: ["is404", "errorInfo"],
   setup(__props) {

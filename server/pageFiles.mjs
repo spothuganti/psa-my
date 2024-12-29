@@ -1,6 +1,6 @@
 import { resolveRoute } from "vite-plugin-ssr/routing";
 import { RenderErrorPage } from "vite-plugin-ssr/RenderErrorPage";
-import { n as names } from "./chunks/chunk-BNs0TbiY.js";
+import { n as names } from "./chunks/chunk-fecfcc78.js";
 const exportNames$e = ["default"];
 const exportNames$d = ["default", ...exportNames$e];
 const __vite_glob_1_0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
@@ -57,7 +57,8 @@ const index_page_route$1 = (pageContext) => {
     return { routeParams: { name: name2 } };
   }
   const result = resolveRoute("/hello/@name", pageContext.urlPathname);
-  if (!result.match) return false;
+  if (!result.match)
+    return false;
   const { name } = result.routeParams;
   if (!names.includes(name)) {
     const errorInfo = `Unknown name: ${name}.`;

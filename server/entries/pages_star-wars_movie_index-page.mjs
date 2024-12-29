@@ -1,11 +1,9 @@
 import { defineComponent, useSSRContext } from "vue";
 import { ssrInterpolate } from "vue/server-renderer";
 import fetch from "cross-fetch";
-import { f as filterMovieData } from "../chunks/chunk-BChgxANp.js";
+import { f as filterMovieData } from "../chunks/chunk-337a7715.js";
 async function onBeforeRender(pageContext) {
-  const response = await fetch(
-    `https://star-wars.brillout.com/api/films/${pageContext.routeParams.movieId}.json`
-  );
+  const response = await fetch(`https://star-wars.brillout.com/api/films/${pageContext.routeParams.movieId}.json`);
   let movie = await response.json();
   movie = filterMovieData(movie);
   const { title } = movie;
@@ -22,7 +20,6 @@ async function onBeforeRender(pageContext) {
   };
 }
 const _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "index.page",
   __ssrInlineRender: true,
   props: ["movie"],
   setup(__props) {

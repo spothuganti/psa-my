@@ -1,7 +1,6 @@
 import { defineComponent, useSSRContext } from "vue";
 import { ssrRenderList, ssrRenderAttr, ssrInterpolate } from "vue/server-renderer";
 const _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "index.page",
   __ssrInlineRender: true,
   props: ["movies"],
   setup(__props) {
