@@ -10,30 +10,30 @@
     "file": "assets/chunks/chunk-BHVpcwqr.js",
     "name": "runtime-core.esm-bundler"
   },
-  "_chunk-BcbUzkeN.js": {
-    "file": "assets/chunks/chunk-BcbUzkeN.js",
+  "_chunk-CYmGo9Tv.js": {
+    "file": "assets/chunks/chunk-CYmGo9Tv.js",
+    "name": "executeOnRenderClientHook"
+  },
+  "_chunk-DCUaQNGz.js": {
+    "file": "assets/chunks/chunk-DCUaQNGz.js",
     "name": "prefetch",
     "imports": [
       "_chunk-CYmGo9Tv.js"
     ]
-  },
-  "_chunk-CYmGo9Tv.js": {
-    "file": "assets/chunks/chunk-CYmGo9Tv.js",
-    "name": "executeOnRenderClientHook"
   },
   "_chunk-KYcoIRiU.js": {
     "file": "assets/chunks/chunk-KYcoIRiU.js",
     "name": "preload-helper"
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/client-routing-runtime/entry.js": {
-    "file": "assets/entries/entry-client-routing.oVwLUVLP.js",
+    "file": "assets/entries/entry-client-routing.hmzEkT2J.js",
     "name": "entries/entry-client-routing",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/client-routing-runtime/entry.js",
     "isEntry": true,
     "imports": [
       "_chunk-CYmGo9Tv.js",
       "_chunk-KYcoIRiU.js",
-      "_chunk-BcbUzkeN.js"
+      "_chunk-DCUaQNGz.js"
     ],
     "dynamicImports": [
       "pages/hello/index.page.vue",
@@ -49,7 +49,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/server-routing-runtime/entry.js": {
-    "file": "assets/entries/entry-server-routing.DrPxlyXi.js",
+    "file": "assets/entries/entry-server-routing.C6EAzwl6.js",
     "name": "entries/entry-server-routing",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/server-routing-runtime/entry.js",
     "isEntry": true,
@@ -88,14 +88,14 @@
     ]
   },
   "pages/index.page.vue": {
-    "file": "assets/entries/pages_index.page.CaFhlzJR.js",
+    "file": "assets/entries/pages_index.page.3YWvJvxv.js",
     "name": "entries/pages/index.page",
     "src": "pages/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-B6Aj7L_O.js",
-      "_chunk-BcbUzkeN.js",
+      "_chunk-DCUaQNGz.js",
       "_chunk-BHVpcwqr.js",
       "_chunk-CYmGo9Tv.js"
     ]
