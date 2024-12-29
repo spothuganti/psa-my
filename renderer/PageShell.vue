@@ -1,13 +1,13 @@
 <template>
   <div class="layout">
     <div class="navigation">
-      <a href="/psa-my/" class="logo">
+      <a href="/" class="logo">
         <img src="./logo.svg" height="64" width="64" />
       </a>
-      <Link href="/psa-my/">Welcome</Link>
-      <Link href="/psa-my/markdown">Markdown</Link>
-      <Link href="/psa-my/star-wars">Data Fetching</Link>
-      <Link href="/psa-my/hello">Routing</Link>
+      <Link href="/">Welcome</Link>
+      <Link href="/markdown">Markdown</Link>
+      <Link href="/star-wars">Data Fetching</Link>
+      <Link href="/hello">Routing</Link>
     </div>
     <div class="content"><slot /></div>
   </div>

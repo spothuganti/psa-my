@@ -6,10 +6,10 @@
   </p>
   <ul>
     <li>
-      <a href="/psa-my/hello/eli">/hello/eli</a>
+      <a href="/hello/eli">/hello/eli</a>
     </li>
     <li>
-      <a href="/psa-my/hello/jon">/hello/jon</a>
+      <a href="/hello/jon">/hello/jon</a>
     </li>
   </ul>
   <p>

@@ -16,6 +16,6 @@ import { navigate } from 'vite-plugin-ssr/client/router'
 
 const randomNavigation = () => {
   const randomIndex = Math.floor(Math.random() * 3)
-  navigate(`/psa-my${['/markdown', '/star-wars', '/hello/alice'][randomIndex]}`)
+  navigate(['/markdown', '/star-wars', '/hello/alice'][randomIndex])
 }
 </script>
