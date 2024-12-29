@@ -1,21 +1,13 @@
+<script lang="ts">
+export const title = "Example";
+</script>
+
+<script setup lang="ts">
+import InlineCode from "/components/InlineCode.vue";
+</script>
+
 <template>
-  <h1>Welcome to <code>vite</code></h1>
-  This page is:
-  <ul>
-    <li>Rendered to HTML.</li>
-    <li>Interactive. <Counter /></li>
-  </ul>
-  <p>
-    <button @click="randomNavigation">Random Page</button>
-  </p>
+  <p>Welcome to a small example project showcasing of some of <InlineCode>vite-plugin-ssr</InlineCode>'s rendering modes. Press any one of them above to see it in action.</p>
+  <p>You can also explore this example to learn about rendering modes in general.</p>
 </template>
 
-<script lang="ts" setup>
-import Counter from '../components/Counter.vue'
-import { navigate } from 'vite-plugin-ssr/client/router'
-
-const randomNavigation = () => {
-  const randomIndex = Math.floor(Math.random() * 3)
-  navigate(['/markdown', '/star-wars', '/hello/alice'][randomIndex])
-}
-</script>

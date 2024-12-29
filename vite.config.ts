@@ -1,19 +1,17 @@
-import { defineConfig } from 'vite'
-import { ssr } from 'vite-plugin-ssr/plugin'
-import md from 'unplugin-vue-markdown/vite'
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
-import vueDevTools from 'vite-plugin-vue-devtools'
+import { defineConfig } from "vite";
+import VitePluginVue from "@vitejs/plugin-vue";
+import VitePluginSSR from "vite-plugin-ssr/plugin";
 
-// https://vite.dev/config/
 export default defineConfig({
+  server: {
+    host: "0.0.0.0",
+    port: 3000
+  },
   plugins: [
-    ssr({ prerender: true, trailingSlash: true }),
-    vue({
-      include: [/\.vue$/, /\.md$/],
-    }),
-    vueJsx(),
-    vueDevTools(),
-    md({}),
-  ],
-})
+    VitePluginVue(),
+    VitePluginSSR({
+      prerender: true,
+      includeAssetsImportedByServer: true
+    })
+  ]
+});
