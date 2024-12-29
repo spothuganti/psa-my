@@ -25,6 +25,10 @@ const modeLinks = [
   {
     url: "/html",
     name: "HTML"
+  },
+  {
+    url: "/star-wars",
+    name: "Star Wars (fetch before render)"
   }
 ];
 
